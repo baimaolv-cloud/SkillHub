@@ -1,0 +1,37 @@
+{
+  "name": "skill-storager",
+  "version": "1.0.0",
+  "author": "baimaolv-cloud",
+  "license": "MIT",
+  "description": "全能文档存储与管理技能，支持多种存储后端和智能分类",
+  "keywords": [
+    "storage",
+    "document",
+    "cos",
+    "tencent",
+    "docs",
+    "git",
+    "obsidian"
+  ],
+  "repository": "https://github.com/baimaolv-cloud/SkillHub",
+  "maintainers": [
+    "baimaolv-cloud"
+  ],
+  "categories": [
+    "storage",
+    "document",
+    "utility"
+  ],
+  "compatibility": {
+    "openclaw": ">=2026.0.0"
+  },
+  "dependencies": {
+    "bash": "*"
+  },
+  "requirements": {
+    "tencent-cos-skill": "可选",
+    "tencent-docs": "可选",
+    "obsidian": "可选"
+  },
+  "source": "universal-doc-storage by xiaoxinBot"
+}
