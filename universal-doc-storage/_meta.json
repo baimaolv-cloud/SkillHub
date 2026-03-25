@@ -1,0 +1,22 @@
+{
+  "name": "universal-doc-storage",
+  "version": "0.1.0",
+  "author": "xiaoxinBot",
+  "license": "MIT",
+  "description": "全能文档存储和管理系统，支持多种存储后端和智能分类",
+  "keywords": ["storage", "document", "cos", "tencent", "docs", "git", "obsidian"],
+  "repository": "https://github.com/xiaoxinBot/universal-doc-storage",
+  "maintainers": ["xiaoxinBot"],
+  "categories": ["storage", "document", "utility"],
+  "compatibility": {
+    "openclaw": ">=2026.0.0"
+  },
+  "dependencies": {
+    "bash": "*"
+  },
+  "requirements": {
+    "tencent-cos-skill": "可选",
+    "tencent-docs": "可选",
+    "obsidian": "可选"
+  }
+}
