@@ -1,0 +1,19 @@
+{
+  "backend": "local",
+  "local": {
+    "root": "~/.qclaw/workspace/documents"
+  },
+  "cos": {
+    "secret_id": "",
+    "secret_key": "",
+    "bucket": "",
+    "region": "ap-guangzhou"
+  },
+  "git": {
+    "repo": "",
+    "branch": "main"
+  },
+  "obsidian": {
+    "vault": ""
+  }
+}
