@@ -18,23 +18,23 @@ from typing import List, Dict, Optional
 from datetime import datetime, timedelta, date
 
 # ─── 路径常量 ────────────────────────────────────────────────────────────────
-WORKSPACE_SKILLS_DIR = Path.home() / '.qclaw' / 'workspace' / 'skills'
+WORKSPACE_SKILLS_DIR = Path.home() / '.openclaw' / 'workspace' / 'skills'
 USAGE_LOG_PATH       = WORKSPACE_SKILLS_DIR / '.skill_usage.json'
-# 首次登录时间锚点文件（QClaw AppData 目录创建时间）
-QCLAW_APPDATA        = Path.home() / 'AppData' / 'Roaming' / 'QClaw'
+# 首次登录时间锚点文件（OpenClaw 目录创建时间）
+OPENCLAW_DIR        = Path.home() / '.openclaw'
 
 # ─── 配置 ────────────────────────────────────────────────────────────────────
 AUTO_CLEAN_DAYS = 30
 
 # 保护名单：永不自动删除
 PROTECTED_SKILLS = {
-    'qclaw-rules', 'qclaw-env', 'qclaw-openclaw', 'qclaw-calendar-guide',
+    'openclaw-rules', 'openclaw-env', 'openclaw-openclaw', 'openclaw-calendar-guide',
     'find-skills', 'skillhub-preference', 'skill-viewer'
 }
 
 # 技能分类映射
 SKILL_CATEGORIES = {
-    '核心系统':   ['qclaw-rules', 'qclaw-env', 'qclaw-openclaw', 'qclaw-calendar-guide'],
+    '核心系统':   ['openclaw-rules', 'openclaw-env', 'openclaw-openclaw', 'openclaw-calendar-guide'],
     '搜索与信息': ['search', 'multi-search-engine', 'find-skills', 'tavily-search', 'tavily-ai'],
     '文档处理':   ['docx', 'pdf', 'pptx', 'xlsx', 'tencent-docs', 'create-readme', 'changelog-maintenance'],
     '设计与前端': ['frontend-design', 'web-design-guidelines', 'canvas-design', 'algorithmic-art'],
@@ -68,7 +68,7 @@ def get_first_login_time() -> datetime:
     """
     取用户首次登录时间：
     优先读 usage_log 中的 _first_login 字段（持久化），
-    否则用 QClaw AppData 目录创建时间，并写入 log 保存。
+    否则用 OpenClaw 目录创建时间，并写入 log 保存。
     """
     log = load_usage_log()
     if '_first_login' in log:
@@ -78,8 +78,8 @@ def get_first_login_time() -> datetime:
             pass
 
     # 从文件系统取
-    if QCLAW_APPDATA.exists():
-        ts = QCLAW_APPDATA.stat().st_ctime
+    if OPENCLAW_DIR.exists():
+        ts = OPENCLAW_DIR.stat().st_ctime
         first = datetime.fromtimestamp(ts)
     else:
         first = datetime.now()
@@ -195,7 +195,7 @@ def get_today_events() -> Dict:
 class SkillViewer:
     def __init__(self):
         self.skills_dirs = [
-            Path('D:/Program Files/QClaw/resources/openclaw/config/skills'),
+            Path.home() / '.openclaw' / 'workspace' / 'skills',
             WORKSPACE_SKILLS_DIR,
             Path.home() / '.agents' / 'skills',
         ]
