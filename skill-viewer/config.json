@@ -1,0 +1,11 @@
+{
+  "name": "skill-viewer",
+  "version": "1.0.0",
+  "description": "查看和管理 OpenClaw 已安装的 skills。列出技能、按分类查看、搜索、查看详情、记录使用时间、自动清理 30 天未使用的 skill。",
+  "tags": ["management", "skill-management", "utilities", "organization", "monitoring"],
+  "updateURL": "https://github.com/baimaolv-cloud/SkillHub/tree/main/skill-viewer",
+  "repository": "https://github.com/baimaolv-cloud/SkillHub",
+  "author": "baimaolv-cloud",
+  "keywords": ["skills", "viewer", "manager", "cleanup", "usage-tracking"],
+  "category": "utility"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "skill-viewer",
+  "version": "1.0.0",
+  "description": "View and manage OpenClaw installed skills. List skills, categorize, search, view details, record usage time, auto-clean unused skills after 30 days.",
+  "main": "skill_viewer.py",
+  "keywords": ["openclaw", "skill", "management", "viewer", "organizer"],
+  "author": "baimaolv-cloud",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baimaolv-cloud/SkillHub"
+  },
+  "homepage": "https://github.com/baimaolv-cloud/SkillHub/tree/main/skill-viewer"
+}
