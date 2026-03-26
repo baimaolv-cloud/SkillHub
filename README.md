@@ -13,19 +13,33 @@
 - **文档ID系统** - 每个文档都有唯一ID，便于管理和查找
 - **配置文件** - 可配置多种存储后端和默认设置
 
-## 安装方法
+## Skill-Storager升级版
+skill-storager是全能文档存储技能的升级版，提供更强大的文档存储和管理能力：
+
+### 升级特性
+✅ **增强的搜索功能** - 支持更智能的关键词匹配  
+✅ **优化的分类系统** - 更准确的自动分类  
+✅ **批量操作优化** - 支持大规模文件处理  
+✅ **性能改进** - 更快的存储和检索速度  
+✅ **错误处理** - 更好的异常处理机制  
+✅ **版本控制增强** - 完整的文档版本管理和历史记录
+
+### 安装方法（skill-storager）
 ```bash
-git clone https://github.com/baimaolv-cloud/universal-doc-storage.git ~/.openclaw/workspace/skills/universal-doc-storage
+git clone https://github.com/baimaolv-cloud/universal-doc-storage.git ~/.openclaw/workspace/skills/skill-storager
+bash ~/.openclaw/workspace/skills/skill-storager/scripts/example.sh
 ```
 
-## GitHub链接
-https://github.com/baimaolv-cloud/universal-doc-storage
+### GitHub仓库
+**全能文档存储**：https://github.com/baimaolv-cloud/universal-doc-storage  
+**Topics标签**：storage, document, cos, tencent, docs, git, obsidian, openclaw, claw
+
+### 技能版本
+- **全能文档存储**：v0.1.0（基础版本）
+- **skill-storager**：v0.2.0（升级版本）
 
 ## 许可证
 MIT License
-
-## 版本
-当前版本：0.1.0
 
 ## 作者
 baimaolv-cloud
