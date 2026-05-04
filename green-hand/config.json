@@ -1,0 +1,9 @@
+{
+  "name": "green-hand",
+  "version": "1.0.0",
+  "description": "WorkBuddy 新手技能安装引导工具",
+  "author": "baimaolv-cloud",
+  "main": "scripts/green_hand.py",
+  "keywords": ["beginner", "install", "skillhub", "clawhub", "github"],
+  "dependencies": {}
+}
